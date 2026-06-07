@@ -1,6 +1,6 @@
 # Echo Swarm: ESP-NOW ile Sürü Ağı Teknolojileri 🐝📡
 
-Bu proje, KTO Karatay Üniversitesi Haberleşme Mühendisliği dersi kapsamında geliştirilmiş, **ESP-NOW** protokolü kullanan üç düğümlü bir kablosuz haberleşme ve sürü ağı MVP (Minimum Viable Product) prototipidir. 
+Bu proje, KTO Karatay Üniversitesi Haberleşme Mühendisliği ve Disiplinlerarası Proje dersleri kapsamında geliştirilmiş, **ESP-NOW** protokolü kullanan üç düğümlü bir kablosuz haberleşme ve sürü ağı MVP (Minimum Viable Product) prototipidir. 
 
 Projenin temel amacı, dış bir ağ altyapısına (router/modem) ihtiyaç duymadan ESP32 düğümlerinin birbirleriyle düşük gecikmeli olarak haberleşmesini sağlamak ve "Echo Swarm" (enkaz altı arama-kurtarma sürüsü) konsepti için temel bir akustik algılama altyapısı oluşturmaktır.
 
@@ -11,6 +11,9 @@ Sistem 3 adet **ESP32-WROOM-32D** geliştirme kartından oluşmaktadır:
 * **Node 2 & Node 3:** Ortamı bağımsız olarak dinler. Ses (eşik değeri) algıladıklarında Master'a ESP-NOW üzerinden veri gönderirler.
 * **Karar Mekanizması:** Master, ilk gelen veri paketini "sese en yakın/ilk algılayan" düğüm olarak kabul eder ve sonucu tüm ağa *broadcast* olarak yayınlar. Kazanan düğüm **Kırmızı LED**, diğerleri **Yeşil LED** yakar.
 
+<img width="618" height="232" alt="image" src="https://github.com/user-attachments/assets/d2504c22-a3f3-4527-b737-98fd02e7c057" />
+
+
 ## 🛠️ Donanım ve Kullanılan Malzemeler
 
 | Bileşen | Adet | Görev |
@@ -19,6 +22,8 @@ Sistem 3 adet **ESP32-WROOM-32D** geliştirme kartından oluşmaktadır:
 | **Mikrofon Sensörü** | 3 | Akustik ses olayının algılanması (Aktif LOW) |
 | **Trafik Lambası / LED Modülü** | 3 | Kazanan/Bekleyen node durumlarını göstermek |
 | **HC-SR04 Sensörü** | 1 | İlk MVP aşamasında engel algılama testi için |
+
+<img width="429" height="240" alt="Ekran görüntüsü 2026-06-06 220721" src="https://github.com/user-attachments/assets/000eae4b-3f00-4892-885a-55a863148fe7" />
 
 ## 🔌 Pin Bağlantıları
 
