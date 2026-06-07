@@ -9,7 +9,7 @@ Projenin temel amacı, dış bir ağ altyapısına (router/modem) ihtiyaç duyma
 Sistem 3 adet **ESP32-WROOM-32D** geliştirme kartından oluşmaktadır:
 * **Master / Node 1:** Hem ortamı dinler (ses algılar) hem de diğer Node'lardan gelen olay (Event) paketlerini toplayarak merkezi kararı verir.
 * **Node 2 & Node 3:** Ortamı bağımsız olarak dinler. Ses (eşik değeri) algıladıklarında Master'a ESP-NOW üzerinden veri gönderirler.
-* **Karar Mekanizması:** Master, ilk gelen veri paketini "sese en yakın/ilk algılayan" düğüm olarak kabul eder ve sonucu tüm ağa *broadcast* olarak yayınlar. Kazanan düğüm **Kırmızı LED**, diğerleri **Yeşil LED** yakar.
+* **Karar Mekanizması:** Master, ilk gelen veri paketini "sese en yakın/ilk algılayan" düğüm olarak kabul eder ve sonucu tüm ağa *broadcast* olarak yayınlar. Kazanan düğüm **Kırmızı LED**, diğerleri **Sarı LED** yakar.
 
 <img width="618" height="232" alt="image" src="https://github.com/user-attachments/assets/d2504c22-a3f3-4527-b737-98fd02e7c057" />
 
@@ -38,7 +38,7 @@ Sistem 3 adet **ESP32-WROOM-32D** geliştirme kartından oluşmaktadır:
 | LED Rengi | ESP32-WROOM-32D |
 | :--- | :--- |
 | Kırmızı LED (Kazanan) | GPIO26 |
-| Yeşil LED (Bekleme) | GPIO27 |
+| Sarı LED (Bekleme) | GPIO27 |
 | GND | GND |
 
 ## 📂 Klasör Yapısı
