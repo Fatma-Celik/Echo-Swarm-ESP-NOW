@@ -4,6 +4,11 @@ Bu proje, KTO Karatay Üniversitesi Haberleşme Mühendisliği ve Disiplinlerara
 
 Projenin temel amacı, dış bir ağ altyapısına (router/modem) ihtiyaç duymadan ESP32 düğümlerinin birbirleriyle düşük gecikmeli olarak haberleşmesini sağlamak ve "Echo Swarm" (enkaz altı arama-kurtarma sürüsü) konsepti için temel bir akustik algılama altyapısı oluşturmaktır.
 
+<img width="965" height="642" alt="image" src="https://github.com/user-attachments/assets/851eb98b-60e3-4aff-92b5-c02f4079508f" />
+
+<img width="963" height="636" alt="image" src="https://github.com/user-attachments/assets/eb66df29-99b1-402d-98ce-a36e9e1af92a" />
+
+
 ## 🚀 Proje Mimarisi
 
 Sistem 3 adet **ESP32-WROOM-32D** geliştirme kartından oluşmaktadır:
